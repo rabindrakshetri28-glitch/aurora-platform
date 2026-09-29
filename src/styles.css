@@ -77,7 +77,7 @@ summary::-webkit-details-marker { display: none; }
 
 .page-container { width: min(1180px, calc(100% - 2rem)); margin-inline: auto; }
 .section-space { padding-block: 7rem; }
-.site-nav { position: fixed; inset: 0 0 auto; z-index: 50; border-bottom: 1px solid color-mix(in oklab, var(--border) 72%, transparent); background: color-mix(in oklab, var(--background) 88%, transparent); backdrop-filter: blur(16px); }
+.site-nav { position: fixed; inset: 0 0 auto; z-index: 50; border-bottom: 1px solid color-mix(in oklab, var(--border) 72%, transparent); background: #FEFEFE; backdrop-filter: blur(16px); }
 .brand-mark { display: grid; width: 2rem; height: 2rem; place-items: center; border-radius: 0.45rem; color: var(--primary-foreground); background: var(--primary); box-shadow: 0 8px 24px color-mix(in oklab, var(--primary) 24%, transparent); }
 .nav-link { font-size: .78rem; font-weight: 650; color: var(--muted-foreground); transition: color .2s ease; }
 .nav-link:hover { color: var(--foreground); }

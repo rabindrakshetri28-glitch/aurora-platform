@@ -97,9 +97,8 @@ const faqs = [
 
 function Brand() {
   return (
-    <a href="#top" className="flex items-center gap-2.5" aria-label="Nexora home">
-      <span className="brand-mark"><Navigation className="size-4" /></span>
-      <span className="text-[1.08rem] font-bold tracking-tight text-foreground">nexora</span>
+    <a href="#top" className="flex items-center gap-2.5" aria-label="iNFIELD 7 home">
+      <img src="/infield7-logo.jpeg" alt="iNFIELD 7" className="h-9 w-auto" />
     </a>
   );
 }
@@ -206,14 +205,25 @@ function Index() {
       </header>
 
       <main>
-        <section className="hero-section pt-28 sm:pt-32">
-          <div className="page-container grid items-center gap-12 pb-20 lg:grid-cols-[0.88fr_1.12fr] lg:gap-16 lg:pb-28">
+        <section className="hero-section relative overflow-hidden pt-28 sm:pt-32">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 z-0 h-full w-full object-cover"
+            aria-hidden="true"
+          >
+            <source src="/hero-bg.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 z-0 bg-black/50" aria-hidden="true" />
+          <div className="page-container relative z-10 grid items-center gap-12 pb-20 lg:grid-cols-[0.88fr_1.12fr] lg:gap-16 lg:pb-28">
             <div className="relative z-10">
               <div className="hero-badge"><span className="size-1.5 rounded-full bg-success"/> Smart workforce management</div>
-              <h1 className="mt-6 text-4xl font-bold leading-[1.08] tracking-tight text-foreground sm:text-5xl lg:text-[4rem]">Know where your workforce is. <span className="text-primary">Manage everything</span> from one dashboard.</h1>
-              <p className="mt-6 max-w-xl text-lg leading-8 text-muted-foreground">Track availability, location, attendance, field activity, sales visits and payroll from one powerful platform.</p>
+              <h1 className="mt-6 text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-[4rem]">Know where your workforce is. <span className="text-primary">Manage everything</span> from one dashboard.</h1>
+              <p className="mt-6 max-w-xl text-lg leading-8 text-white/80">Track availability, location, attendance, field activity, sales visits and payroll from one powerful platform.</p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row"><a className="button button-primary" href="#demo">Book a demo <ArrowRight className="size-4"/></a><a className="button button-secondary" href="#features">Explore features <ChevronDown className="size-4"/></a></div>
-              <div className="mt-7 flex items-start gap-2.5 text-sm leading-6 text-muted-foreground"><CheckCircle2 className="mt-0.5 size-4 shrink-0 text-success"/><span>Built for teams across offices, sites, service centers and the field.</span></div>
+              <div className="mt-7 flex items-start gap-2.5 text-sm leading-6 text-white/70"><CheckCircle2 className="mt-0.5 size-4 shrink-0 text-success"/><span>Built for teams across offices, sites, service centers and the field.</span></div>
             </div>
             <div className="relative"><div className="hero-grid"/><HeroDashboard/><div className="floating-card floating-card-one"><span className="icon-box icon-success"><UserRoundCheck className="size-4"/></span><div><b>Attendance synced</b><span>32 employees</span></div></div><div className="floating-card floating-card-two"><span className="icon-box icon-blue"><Zap className="size-4"/></span><div><b>Live status</b><span>Updated now</span></div></div></div>
           </div>
